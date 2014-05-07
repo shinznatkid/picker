@@ -1,18 +1,24 @@
 # -*- coding: utf-8 -*-
-from distutils.core import setup
+# from distutils.core import setup
+from setuptools import setup, find_packages
+
+version = '0.1.0'
 
 setup(
     name='django-picker',
-    version='0.1.0',
+    version=version,
     author=u'ShinZ Natkid',
     author_email='shinznatkid@gmail.com',
-    packages=['picker'],
+    packages=find_packages(), #['picker'],
     url='http://github.com/shinznatkid/picker',
-    license='BSD licence',
-    description='Choose your javascript, css framework into your project.',
+    license='BSD',
+    include_package_data=True,
+    description='Put javascript, css framework into your project.',
     long_description=open('README.md').read(),
-    zip_safe=False,
+    # package_data={
+    #     'picker': ['static/*'],
+    # },
     install_requires=[
-        "Django >= 1.4.0",
+        "django",
     ],
 )
