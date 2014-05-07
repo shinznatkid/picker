@@ -4,7 +4,9 @@ Choose your javascript, css framework into your project.
 
 Installation
 ------------
-1. Clone this app to your project.
+1. Python package
+
+        pip install django-picker
 
 2. Add 'picker' to INSTALLED_APPS:
 
