@@ -1,0 +1,6 @@
+{
+  "jquery": {
+    "version": "2.1.1",
+    "main": "jquery/jquery.min.js"
+  }
+}
