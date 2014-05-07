@@ -16,10 +16,23 @@ def load_js():
 	else:
 		from django.templatetags.static import static
 
-	output_html = ''
+	js_html = ''
+	for js in picker_settings.PICKER_JS:
+		file_path = static('picker/%s' % js)
+		scripts = '<script type="text/javascript" src="%s"></script>' % file_path
+		js_html += format_html(scripts)
+	return js_html
 
-	for config_item in picker_settings.CONFIG:
-		file_path = static('picker/%s' % picker_settings.PICKER_REPO[config_item]['main'])
-		scripts = '<script src="%s"></script>' % file_path
-		output_html += format_html(scripts)
-	return output_html
+@register.simple_tag
+def load_css():
+	if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
+		from django.contrib.staticfiles.templatetags.staticfiles import static
+	else:
+		from django.templatetags.static import static
+
+	css_html = ''
+	for css in picker_settings.PICKER_CSS:
+		file_path = static('picker/%s' % css)
+		scripts = '<link rel="stylesheet" type="text/css" href="%s">' % file_path
+		css_html += format_html(scripts)
+	return css_html

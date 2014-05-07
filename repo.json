@@ -1,6 +1,28 @@
 {
   "jquery": {
     "version": "2.1.1",
-    "main": "jquery/jquery.min.js"
-  }
+    "js": [ "jquery/jquery.min.js" ]
+    },
+    "bootstrap": {
+        "version": "3.1.1",
+        "dependencies": {
+            "jquery" : ">= 1.9.0"
+            },
+            "js": [ "bootstrap/js/bootstrap.min.js" ],
+            "css": [ 
+            "bootstrap/css/bootstrap.min.css",
+            "bootstrap/css/bootstrap-theme.min.css"
+            ],
+            "assets": [
+            "bootstrap/fonts/glyphicons-halflings-regular.eot",
+            "bootstrap/fonts/glyphicons-halflings-regular.svg",
+            "bootstrap/fonts/glyphicons-halflings-regular.ttf",
+            "bootstrap/fonts/glyphicons-halflings-regular.woff"
+        ]
+    },
+    "less": {
+        "version": "1.7.0",
+        "js": [ "less/less-1.7.0.min.js" ]
+    }
 }
+
