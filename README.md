@@ -9,15 +9,21 @@ Installation
 2. Add 'picker' to INSTALLED_APPS:
 
         'picker',
-3. Define PICKER_INSTALLED_APPS in settings.py 
+
+Setting
+------------
+1. Define PICKER_INSTALLED_APPS in settings.py
 
         PICKER_INSTALLED_APPS = (
             'jquery',
         )
-4. Define following tag in templates
+
+Use in templates
+------------
+1. Define following tag in templates
 
         {% load pickertags %}
-5. Define following tag inside body in templates
+2. Define following tag inside body in templates
 
         {% load pickertags %}
         <html>
