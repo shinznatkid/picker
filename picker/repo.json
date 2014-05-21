@@ -7,13 +7,13 @@
         "version": "3.1.1",
         "dependencies": {
             "jquery" : ">= 1.9.0"
-            },
-            "js": [ "bootstrap/js/bootstrap.min.js" ],
-            "css": [ 
+        },
+        "js": [ "bootstrap/js/bootstrap.min.js" ],
+        "css": [ 
             "bootstrap/css/bootstrap.min.css",
             "bootstrap/css/bootstrap-theme.min.css"
-            ],
-            "assets": [
+        ],
+        "assets": [
             "bootstrap/fonts/glyphicons-halflings-regular.eot",
             "bootstrap/fonts/glyphicons-halflings-regular.svg",
             "bootstrap/fonts/glyphicons-halflings-regular.ttf",
@@ -23,6 +23,16 @@
     "less": {
         "version": "1.7.0",
         "js": [ "less/less-1.7.0.min.js" ]
+    },
+    "ember": {
+        "version": "1.5.1",
+        "js": [
+            "ember/ember-1.5.1.js",
+            "ember/handlebars-1.1.2.js"
+        ],
+        "dependencies": {
+            "jquery" : ">= 1.10.2"
+        }
     }
 }
 
