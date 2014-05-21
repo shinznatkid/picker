@@ -27,8 +27,8 @@
     "ember": {
         "version": "1.5.1",
         "js": [
-            "ember/ember-1.5.1.js",
-            "ember/handlebars-1.1.2.js"
+            "ember/handlebars-1.1.2.js",
+            "ember/ember-1.5.1.js"
         ],
         "dependencies": {
             "jquery" : ">= 1.10.2"
