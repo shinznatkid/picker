@@ -1,9 +1,7 @@
 from __future__ import absolute_import, unicode_literals
 
-import warnings
 
 from django.conf import settings
-from django.utils import six
 import json
 import os
 
@@ -18,7 +16,7 @@ for USER_CONFIG_ITEM in USER_CONFIG:
 
 PICKER_REPO = {}
 try:
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'repo.json')) as handle:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'repo.json')) as handle:
         PICKER_REPO = json.load(handle)
 except IOError:
     PICKER_REPO = {}
@@ -28,6 +26,7 @@ PICKER_JS = []
 PICKER_CSS = []
 PICKER_ASSETS = []
 PICKER_LOADED = []
+
 
 def load_configure(config_item):
     global PICKER_REPO, PICKER_LOADED, PICKER_JS, PICKER_CSS, PICKER_ASSETS

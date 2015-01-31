@@ -1,0 +1,4 @@
+*.pyc
+dist/*
+django_picker.egg-info/*
+.coverage

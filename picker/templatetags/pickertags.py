@@ -9,30 +9,32 @@ from picker import settings as picker_settings
 
 register = Library()
 
+
 @register.simple_tag
 def load_js():
-	if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
-		from django.contrib.staticfiles.templatetags.staticfiles import static
-	else:
-		from django.templatetags.static import static
+    if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
+        from django.contrib.staticfiles.templatetags.staticfiles import static
+    else:
+        from django.templatetags.static import static
 
-	js_html = ''
-	for js in picker_settings.PICKER_JS:
-		file_path = static('picker/%s' % js)
-		scripts = '<script type="text/javascript" src="%s"></script>' % file_path
-		js_html += format_html(scripts)
-	return js_html
+    js_html = ''
+    for js in picker_settings.PICKER_JS:
+        file_path = static('picker/%s' % js)
+        scripts = '<script type="text/javascript" src="%s"></script>' % file_path
+        js_html += format_html(scripts)
+    return js_html
+
 
 @register.simple_tag
 def load_css():
-	if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
-		from django.contrib.staticfiles.templatetags.staticfiles import static
-	else:
-		from django.templatetags.static import static
+    if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
+        from django.contrib.staticfiles.templatetags.staticfiles import static
+    else:
+        from django.templatetags.static import static
 
-	css_html = ''
-	for css in picker_settings.PICKER_CSS:
-		file_path = static('picker/%s' % css)
-		scripts = '<link rel="stylesheet" type="text/css" href="%s">' % file_path
-		css_html += format_html(scripts)
-	return css_html
+    css_html = ''
+    for css in picker_settings.PICKER_CSS:
+        file_path = static('picker/%s' % css)
+        scripts = '<link rel="stylesheet" type="text/css" href="%s">' % file_path
+        css_html += format_html(scripts)
+    return css_html

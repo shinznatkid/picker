@@ -39,5 +39,8 @@ Usable list
 ------------
 - jquery
 - bootstrap
+- bootstrap-theme
+- bootstrap-cosmo
 - less
 - ember
+- angularjs

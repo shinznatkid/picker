@@ -1,28 +1,53 @@
 {
-  "jquery": {
-    "version": "2.1.1",
-    "js": [ "jquery/jquery.min.js" ]
+    "jquery": {
+        "version": "2.1.3",
+        "js": [ "jquery/jquery.min.js" ]
     },
     "bootstrap": {
-        "version": "3.1.1",
+        "version": "3.2.2",
         "dependencies": {
             "jquery" : ">= 1.9.0"
         },
         "js": [ "bootstrap/js/bootstrap.min.js" ],
         "css": [ 
-            "bootstrap/css/bootstrap.min.css",
-            "bootstrap/css/bootstrap-theme.min.css"
+            "bootstrap/css/bootstrap.min.css"
         ],
         "assets": [
             "bootstrap/fonts/glyphicons-halflings-regular.eot",
             "bootstrap/fonts/glyphicons-halflings-regular.svg",
             "bootstrap/fonts/glyphicons-halflings-regular.ttf",
-            "bootstrap/fonts/glyphicons-halflings-regular.woff"
+            "bootstrap/fonts/glyphicons-halflings-regular.woff",
+            "bootstrap/fonts/glyphicons-halflings-regular.woff2",
+            "bootstrap/js/npm.js"
+        ]
+    },
+    "bootstrap-theme": {
+        "version": "3.2.2",
+        "dependencies": {
+            "bootstrap" : ">= 3.2.2",
+            "jquery" : ">= 1.9.0"
+        },
+        "css": [ 
+            "bootstrap/css/bootstrap-theme.min.css"
+        ]
+    },
+    "bootstrap-cosmo": {
+        "version": "3.2.2",
+        "dependencies": {
+            "bootstrap" : ">= 3.2.2",
+            "jquery" : ">= 1.9.0"
+        },
+        "css": [ 
+            "bootstrap-cosmo/css/cosmo.min.css"
         ]
     },
     "less": {
-        "version": "1.7.0",
-        "js": [ "less/less-1.7.0.min.js" ]
+        "version": "2.3.1",
+        "js": [ "less/less.min.js" ]
+    },
+    "angularjs": {
+        "version": "1.3.11",
+        "js": [ "angularjs/angular.min.js" ]
     },
     "ember": {
         "version": "1.5.1",
