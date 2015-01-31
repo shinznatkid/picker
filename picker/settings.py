@@ -1,6 +1,7 @@
 from __future__ import absolute_import, unicode_literals
 
 
+from exception import PickerException
 from django.conf import settings
 import json
 import os
@@ -31,6 +32,8 @@ PICKER_LOADED = []
 def load_configure(config_item):
     global PICKER_REPO, PICKER_LOADED, PICKER_JS, PICKER_CSS, PICKER_ASSETS
     if config_item not in PICKER_LOADED:
+        if config_item not in PICKER_REPO:
+            raise PickerException('Repo "%s" not found (Please upgrade django-picker package and try again).' % config_item)
 
         PICKER_LOADED.append(config_item)
         if 'dependencies' in PICKER_REPO[config_item]:
@@ -46,7 +49,4 @@ def load_configure(config_item):
             PICKER_ASSETS += PICKER_REPO[config_item]['assets']
 
 for CONFIG_ITEM in CONFIG:
-    if CONFIG_ITEM not in PICKER_REPO:
-        CONFIG.remove(CONFIG_ITEM)
-    else:
-        load_configure(CONFIG_ITEM)
+    load_configure(CONFIG_ITEM)

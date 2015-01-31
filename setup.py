@@ -5,7 +5,7 @@ import sys
 from setuptools import setup, find_packages
 from distutils.sysconfig import get_python_lib
 
-version = '0.2.0'
+version = '0.2.1'
 
 setup(
     name='django-picker',
@@ -19,9 +19,6 @@ setup(
     description='Put javascript, css framework into your project.',
     long_description=open('README.md').read(),
     zip_safe=False,
-    install_requires=[
-        "django>=1.3.1",
-    ],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Programming Language :: Python :: 2.7',
