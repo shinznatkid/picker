@@ -1,7 +1,7 @@
 from __future__ import absolute_import, unicode_literals
 
 
-from exception import PickerException
+from .exception import PickerException
 from django.conf import settings
 import json
 import os
