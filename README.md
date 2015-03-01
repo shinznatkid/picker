@@ -1,6 +1,7 @@
 Picker - Django Assets Manager
 ======
 
+[![Downloads](https://img.shields.io/travis/shinznatkid/picker.svg)](https://travis-ci.org/shinznatkid/picker/)
 [![Downloads](https://img.shields.io/pypi/dm/django-picker.svg)](https://pypi.python.org/pypi/django-picker/)
 [![Downloads](https://img.shields.io/pypi/v/django-picker.svg)](https://pypi.python.org/pypi/django-picker/)
 [![Downloads](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/django-picker/)
