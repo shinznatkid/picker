@@ -35,6 +35,9 @@ Use in templates
 
         {% load pickertags %}
         <html>
+            <head>
+                {% load_css %}
+            </head>
             <body>
                 {% load_js %}
             </body>
