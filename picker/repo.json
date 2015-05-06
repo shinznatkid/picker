@@ -29,6 +29,13 @@
         },
         "css": [ 
             "bootstrap/css/bootstrap-theme.min.css"
+        ],
+        "assets": [
+            "bootstrap/fonts/glyphicons-halflings-regular.eot",
+            "bootstrap/fonts/glyphicons-halflings-regular.svg",
+            "bootstrap/fonts/glyphicons-halflings-regular.ttf",
+            "bootstrap/fonts/glyphicons-halflings-regular.woff",
+            "bootstrap/fonts/glyphicons-halflings-regular.woff2"
         ]
     },
     "bootstrap-cosmo": {
