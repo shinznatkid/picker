@@ -1,5 +1,11 @@
 Picker - Django Assets Manager
 ======
+
+[![Downloads](https://img.shields.io/travis/shinznatkid/picker.svg)](https://travis-ci.org/shinznatkid/picker/)
+[![Downloads](https://img.shields.io/pypi/dm/django-picker.svg)](https://pypi.python.org/pypi/django-picker/)
+[![Downloads](https://img.shields.io/pypi/v/django-picker.svg)](https://pypi.python.org/pypi/django-picker/)
+[![Downloads](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/django-picker/)
+
 Choose your javascript, css framework into your project.
 
 Installation
@@ -29,6 +35,9 @@ Use in templates
 
         {% load pickertags %}
         <html>
+            <head>
+                {% load_css %}
+            </head>
             <body>
                 {% load_js %}
             </body>
