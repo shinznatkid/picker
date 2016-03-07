@@ -21,8 +21,8 @@ def load_js():
     for js in picker_settings.PICKER_JS:
         file_path = static('picker/%s' % js)
         scripts = '<script type="text/javascript" src="%s"></script>' % file_path
-        js_html += format_html(scripts)
-    return js_html
+        js_html += scripts
+    return format_html(js_html)
 
 
 @register.simple_tag
@@ -36,5 +36,5 @@ def load_css():
     for css in picker_settings.PICKER_CSS:
         file_path = static('picker/%s' % css)
         scripts = '<link rel="stylesheet" type="text/css" href="%s">' % file_path
-        css_html += format_html(scripts)
-    return css_html
+        css_html += scripts
+    return format_html(css_html)
