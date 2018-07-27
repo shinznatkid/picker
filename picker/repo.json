@@ -1,6 +1,6 @@
 {
     "jquery": {
-        "version": "2.1.3",
+        "version": "3.3.1",
         "js": [ "jquery/jquery.min.js" ]
     },
     "bootstrap": {
@@ -47,6 +47,26 @@
         "css": [ 
             "bootstrap-cosmo/css/cosmo.min.css"
         ]
+    },
+    "bootstrap4": {
+        "version": "4.1.3",
+        "dependencies": {
+            "jquery" : ">= 1.9.0",
+            "popper" : ">= 1.14.0"
+        },
+        "js": [
+            "bootstrap4/js/bootstrap.min.js",
+            "bootstrap.bundle.min.js"
+        ],
+        "css": [
+            "bootstrap-reboot.min.css",
+            "bootstrap/css/bootstrap.min.css",
+            "bootstrap-grid.min.css"
+        ]
+    },
+    "popper": {
+        "version": "1.14.3",
+        "js": [ "popper/popper.min.js" ]
     },
     "less": {
         "version": "2.3.1",
