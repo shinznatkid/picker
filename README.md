@@ -48,6 +48,8 @@ Usable list
 ------------
 - jquery
 - bootstrap
+- bootstrap4
+- popper
 - bootstrap-theme
 - bootstrap-cosmo
 - less
