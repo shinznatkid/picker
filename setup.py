@@ -5,7 +5,7 @@ import sys
 from setuptools import setup, find_packages
 from distutils.sysconfig import get_python_lib
 
-version = '0.2.6'
+version = '0.3.0'
 
 setup(
     name='django-picker',
