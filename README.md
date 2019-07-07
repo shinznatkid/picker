@@ -52,6 +52,7 @@ Usable list
 - popper *1.14.3*
 - bootstrap-theme *3.2.2*
 - bootstrap-cosmo *3.2.2*
+- bootstrap4-darkly *4.3.1*
 - less *2.3.1*
 - ember *1.5.1*
 - angularjs *1.3.11*
