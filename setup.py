@@ -20,6 +20,7 @@ setup(
     ],
     description='Put javascript, css framework into your project.',
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     zip_safe=False,
     classifiers=[
         'Development Status :: 3 - Alpha',
