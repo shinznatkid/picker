@@ -46,15 +46,15 @@ Use in templates
 
 Usable list
 ------------
-- jquery
-- bootstrap
-- bootstrap4
-- popper
-- bootstrap-theme
-- bootstrap-cosmo
-- less
-- ember
-- angularjs
-- vuejs
-- vuejs-dev
-- fontawesome
+- jquery *3.4.1*
+- bootstrap *3.2.2*
+- bootstrap4 *4.3.1*
+- popper *1.14.3*
+- bootstrap-theme *3.2.2*
+- bootstrap-cosmo *3.2.2*
+- less *2.3.1*
+- ember *1.5.1*
+- angularjs *1.3.11*
+- vuejs *2.6.10*
+- vuejs-dev *2.6.10*
+- fontawesome *5.9.0*
