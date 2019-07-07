@@ -58,4 +58,5 @@ Usable list
 - angularjs *1.3.11*
 - vuejs *2.6.10*
 - vuejs-dev *2.6.10*
+- vue-router *3.0.7*
 - fontawesome *5.9.0*
