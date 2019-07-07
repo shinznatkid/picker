@@ -49,7 +49,7 @@ Usable list
 - jquery *3.4.1*
 - bootstrap *3.2.2*
 - bootstrap4 *4.3.1*
-- popper *1.14.3*
+- popper *1.15.1*
 - bootstrap-theme *3.2.2*
 - bootstrap-cosmo *3.2.2*
 - bootstrap4-darkly *4.3.1*

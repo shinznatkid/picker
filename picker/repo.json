@@ -52,36 +52,30 @@
         "version": "4.3.1",
         "dependencies": {
             "jquery" : ">= 1.9.0",
-            "popper" : ">= 1.14.0"
+            "popper" : ">= 1.15.0"
         },
         "js": [
-            "bootstrap4/js/bootstrap.min.js",
-            "bootstrap4/js/bootstrap.bundle.min.js"
+            "bootstrap4/js/bootstrap.min.js"
         ],
         "css": [
-            "bootstrap4/css/bootstrap-reboot.min.css",
-            "bootstrap4/css/bootstrap.min.css",
-            "bootstrap4/css/bootstrap-grid.min.css"
+            "bootstrap4/css/bootstrap.min.css"
         ]
     },
     "bootstrap4-darkly": {
         "version": "4.3.1",
         "dependencies": {
             "jquery" : ">= 1.9.0",
-            "popper" : ">= 1.14.0"
+            "popper" : ">= 1.15.0"
         },
         "js": [
-            "bootstrap4/js/bootstrap.min.js",
-            "bootstrap4/js/bootstrap.bundle.min.js"
+            "bootstrap4/js/bootstrap.min.js"
         ],
         "css": [
-            "bootstrap4/css/bootstrap-reboot.min.css",
-            "bootstrap4-darkly/css/bootstrap.min.css",
-            "bootstrap4/css/bootstrap-grid.min.css"
+            "bootstrap4-darkly/css/bootstrap.min.css"
         ]
     },
     "popper": {
-        "version": "1.14.3",
+        "version": "1.15.0",
         "js": [ "popper/popper.min.js" ]
     },
     "less": {
