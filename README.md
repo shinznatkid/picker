@@ -55,3 +55,6 @@ Usable list
 - less
 - ember
 - angularjs
+- vuejs
+- vuejs-dev
+- fontawesome
