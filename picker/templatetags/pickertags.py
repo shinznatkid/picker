@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 from django.utils.html import escapejs, format_html
 from django.template.loader import get_template
 from django.template.context import Context
@@ -13,7 +11,10 @@ register = Library()
 @register.simple_tag
 def load_js():
     if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
-        from django.contrib.staticfiles.templatetags.staticfiles import static
+        try:
+            from django.contrib.staticfiles.templatetags.staticfiles import static
+        except Exception:  # For Django >= 3
+            from django.templatetags.static import static
     else:
         from django.templatetags.static import static
 
@@ -28,7 +29,10 @@ def load_js():
 @register.simple_tag
 def load_css():
     if 'django.contrib.staticfiles' in settings.INSTALLED_APPS:
-        from django.contrib.staticfiles.templatetags.staticfiles import static
+        try:
+            from django.contrib.staticfiles.templatetags.staticfiles import static
+        except Exception:  # For Django >= 3
+            from django.templatetags.static import static
     else:
         from django.templatetags.static import static
 

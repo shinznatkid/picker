@@ -46,9 +46,11 @@ Use in templates
 
 Usable list
 ------------
-- jquery *3.4.1*
-- bootstrap *3.2.2*
+- jquery *3.6.0*
+- bootstrap *5.1.1*
+- bootstrap3 *3.2.2*
 - bootstrap4 *4.3.1*
+- bootstrap5 *5.1.1*
 - popper *1.15.1*
 - bootstrap-theme *3.2.2*
 - bootstrap-cosmo *3.2.2*

@@ -5,7 +5,7 @@ import sys
 from setuptools import setup, find_packages
 from distutils.sysconfig import get_python_lib
 
-version = '0.5.3'
+version = '1.0.0'
 
 setup(
     name='django-picker',
@@ -23,7 +23,7 @@ setup(
     long_description_content_type='text/markdown',
     zip_safe=False,
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Programming Language :: Python :: 2.7',
+        'Development Status :: 4 - Beta',
+        'Programming Language :: Python :: 3.5',
     ]
 )
