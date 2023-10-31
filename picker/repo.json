@@ -8,7 +8,7 @@
         "dependencies": {
             "jquery" : ">= 1.9.0"
         },
-        "js": [ "bootstrap5/js/bootstrap.min.js" ],
+        "js": [ "bootstrap5/js/bootstrap.bundle.min.js" ],
         "css": [ 
             "bootstrap5/css/bootstrap.min.css"
         ],
